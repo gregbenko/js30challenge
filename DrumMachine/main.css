@@ -1,0 +1,27 @@
+body {
+  background-image: url("img/jeff-mills.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  color: #fff;
+}
+
+header {
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  font-size: 2em;
+  padding: 30px;
+  margin: 15px;
+}
