@@ -1,53 +1,56 @@
 body {
   font-family: 'Roboto Slab', serif;
   background-image: url(img/jeff-mills.jpg);
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  color: white;
 }
 
 header {
-  color: white;
-  text-align: center;
   margin-top: 50px;
+  text-align: center;
   letter-spacing: 10px;
-  text-transform: uppercase;
 }
 
 kbd {
   font-family: 'Roboto Slab', serif;
-  color: white;
   display: block;
-  text-align: center;
-  margin-top: 18px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 1.1em;
 }
 
-.centralBox {
+.keys {
   display: flex;
-  margin: 200px 100px;
+  min-height: 80vh;
   align-items: center;
-  justify-content: space-around;
-
+  justify-content: center;
 }
 
 .key {
-  height: 72px;
-  width: 80px;
-  border-style: solid;
-  font-size: 1.1em;
+  margin: 1rem;
+  text-align: center;
+  height: 6rem;
+  width: 6rem;
+  transition: all .07s ease;
   border-width: 4px;
+  border-style: solid;
+  border-color: black;
   border-radius: 10px;
-  border-color: #000;
   background-color: rgba(30, 30, 30, 0.5);
 }
 
+.playing {
+  transform: scale(1.1);
+  border-color: yellow;
+  box-shadow: 0 0 10px #303030;
+}
+
 .sound {
-  display: block;
-  text-align: center;
-  margin-top: 8px;
-  font-size: 0.6em;
-  letter-spacing: 3px;
+  font-size: 0.8em;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  color: #fffa00;
+  color: yellow;
 }
