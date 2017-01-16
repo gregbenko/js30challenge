@@ -1,23 +1,21 @@
-const hour = document.querySelector(".hour");
-const minute = document.querySelector(".minute");
-const second = document.querySelector(".second");
+const seconds = document.querySelector(".second");
+const minutes = document.querySelector(".minute");
+const hours = document.querySelector(".hour");
 
 function setDate () {
   const now = new Date;
 
-  const secondRotate = now.getSeconds();
-  const secondRotateDeg = ((secondRotate / 60) * 360);
-  second.style.transform = `rotate(${secondRotateDeg}deg)`;
+  const secondsNow = now.getSeconds();
+  const secondsNowDeg = (secondsNow / 60) * 360;
+  seconds.style.transform =`rotate(${secondsNowDeg}deg)`;
 
-  const minuteRotate = now.getMinutes();
-  const minuteRotateDeg = ((minuteRotate / 60) * 360) + (secondRotateDeg / 360);
-  minute.style.transform = `rotate(${minuteRotateDeg}deg)`;
+  const minuteNow = now.getMinutes();
+  const minuteNowDeg = (minuteNow / 60) * 360;
+  minutes.style.transform =`rotate(${minuteNowDeg}deg)`;
 
-  const hourRotate = now.getHours();
-  const hourRotateDeg = ((hourRotate / 12) * 360) + (minuteRotateDeg / 12);
-  hour.style.transform = `rotate(${hourRotateDeg}deg)`;
+  const hourNow = now.getHours();
+  const hourNowDeg = (hourNow / 12) * 360;
+  hours.style.transform = `rotate(${hourNowDeg}deg)`;
 }
 
-setInterval(setDate, 1000);
-
-setDate();
+setInterval (setDate, 1000)
