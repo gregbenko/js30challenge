@@ -6,7 +6,12 @@ function playSound (e) {
   audio.play();
   audio.currentTime = 0;
 
-  // key.classList.add(".playing");
+  key.classList.add("playing");
 };
 
-const keys = document.querySelectorAll(".key");
+const keys = Array.from(document.querySelectorAll(".key"));
+keys.forEach(key => key.addEventListener("transitionend", removeTransition));
+
+function removeTransition (e) {
+  this.classList.remove("playing");
+};

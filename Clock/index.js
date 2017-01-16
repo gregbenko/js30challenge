@@ -7,15 +7,15 @@ function setDate () {
 
   const secondsNow = now.getSeconds();
   const secondsNowDeg = (secondsNow / 60) * 360;
-  seconds.style.transform =`rotate(${secondsNowDeg}deg)`;
+  seconds.style.transform = `rotate(${secondsNowDeg}deg)`;
 
   const minuteNow = now.getMinutes();
   const minuteNowDeg = (minuteNow / 60) * 360;
-  minutes.style.transform =`rotate(${minuteNowDeg}deg)`;
+  minutes.style.transform = `rotate(${minuteNowDeg}deg)`;
 
   const hourNow = now.getHours();
   const hourNowDeg = (hourNow / 12) * 360;
   hours.style.transform = `rotate(${hourNowDeg}deg)`;
 }
 
-setInterval (setDate, 1000)
+setInterval (setDate, 1000);
