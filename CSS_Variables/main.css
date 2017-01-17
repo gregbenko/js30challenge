@@ -1,0 +1,52 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: lightgrey;
+  /*height: 100vh;*/
+}
+
+header {
+  margin-top: 50px;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*img {
+  height: 250px;
+  width: 250px;
+}*/
+
+.variables {
+  display: inline-block;
+  font-weight: 300;
+  text-align: center;
+}
+
+
+.bigContainer {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: yellow;
+  height: 600px;
+  width: 600px;
+  display: inline-block;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgWhale {
+  height: 500px;
+  width: 500px;
+  background-image: url(img/whale.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
