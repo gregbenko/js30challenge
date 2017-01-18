@@ -5,24 +5,29 @@
     <title>CSS Variables</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
   </head>
   <body>
     <header>
-      <h1>Update CSS Variables</h1>
+      <h1>Update CSS Variables with <span class="hl">JS</span></h1>
     </header>
 
-    <div class="variables">
-      <span>Spacing:</span>
-      <span>Blur:</span>
-      <span>Base Color:</span>
+    <div class="controls">
+      <label for="spacing">Spacing</label>
+      <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+
+      <label for="blur">Blur</label>
+      <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+
+      <label for="base">Base Color</label>
+      <input id="base" type="color" name="base" value="#ffc600">
     </div>
 
-  <div class="bigContainer">
-    <div class="container">
-      <div class="imgWhale"></div>
+    <div class="imgContainer">
+      <div class="imgWhale">
+      </div>
     </div>
-    </div>
+
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>

@@ -1,52 +1,56 @@
+:root {
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   background-color: lightgrey;
-  /*height: 100vh;*/
 }
 
 header {
-  margin-top: 50px;
-  color: white;
+  font-weight: 700;
   font-size: 2rem;
-  font-weight: bold;
   text-align: center;
+  color: white;
 }
 
-/*img {
-  height: 250px;
-  width: 250px;
-}*/
-
-.variables {
-  display: inline-block;
-  font-weight: 300;
-  text-align: center;
+h1 {
+  font-weight: 700;
 }
 
+label {
+  margin: 0 10px 0 40px;
+}
 
-.bigContainer {
-  height: 80vh;
+.hl {
+  color: var(--base);
+}
+
+.controls {
+  text-align: center;
+  margin: 5rem 3rem 5rem 3rem;
+}
+
+.imgContainer {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 60vh;
+  margin-bottom: 1rem;
 }
 
-.container {
-  background-color: yellow;
-  height: 600px;
-  width: 600px;
-  display: inline-block;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.imgWhale {
-  height: 500px;
-  width: 500px;
+.imgWhale{
+  filter: blur(var(--blur));
+  height: 100%;
+  width: 80%;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: var(--spacing);
+  border-color: var(--base);
   background-image: url(img/whale.jpg);
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
