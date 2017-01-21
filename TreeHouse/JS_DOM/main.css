@@ -1,0 +1,97 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+header {
+  border-bottom: dashed 2px lightgrey;
+  max-width: 1250px;
+  margin: auto;
+  padding: 15px;
+}
+
+input {
+  height: 35px;
+  border-radius: 10px;
+  border: solid 2px lightgrey;
+  font-size: 1.1rem;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  margin: 25px 0px 15px 25px;
+  list-style: none;
+  /*display: inline;*/
+
+}
+
+
+.firstSection {
+  height: 4rem;
+  border-bottom: dashed 2px lightgrey;
+  max-width: 1250px;
+  margin: auto;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.hideList {
+  padding: 10px 15px;
+  background-color: green;
+  border-radius: 10px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+  border-style: none;
+}
+
+.secondSection {
+  /*height: rem;*/
+  max-width: 1250px;
+  margin: auto;
+  padding: 15px;
+  /*display: flex;
+  align-items: center;*/
+}
+
+.listTitle {
+  display: block;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.buttonList {
+  /*margin-top: -2px;*/
+  padding: 10px 15px;
+  background-color: green;
+  border-radius: 10px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+  border-style: none;
+}
+
+.arrangeButtons {
+  margin-top: -7px;
+  display: inline;
+  float: right;
+}
+
+.up {
+
+}
+
+.down {
+  background-color: lightblue;
+  margin-left: 10px;
+}
+
+.remove {
+  background-color: red;
+  margin-left: 10px;
+}
