@@ -14,15 +14,15 @@
     </header>
 
     <div class="firstSection">
-      <button type="button" name="button" class="hideList">Hide List</button>
+      <button id="buttonHideList" type="button" name="button" class="hideList">Hide List</button>
     </div>
 
-    <div class="secondSection">
+    <div id="hideSecondSection" class="secondSection">
       <span class="listTitle">Best Fruits</span>
-      <input type="text" name="" value="">
-      <label for=""><button type="button" name="button" class="buttonList">Change List Title</button></label>
+      <input id="inputListName" type="text" name="" value="">
+      <label for=""><button id="changeListButton" type="button" name="button" class="buttonList">Change List Title</button></label>
 
-      <ul>
+      <ul id="list">
         <li>Apple <div class="arrangeButtons">
           <button type="button" name="button" class="buttonList up">Up</button>
           <button type="button" name="button" class="buttonList down">Down</button>
@@ -45,9 +45,11 @@
         </div></li></li>
       </ul>
 
-      <input type="text" name="" value="">
-      <label for=""><button type="button" name="button" class="buttonList">Add List Item</button></label>
+      <input id="addNewItem" type="text" name="" value="">
+      <label for=""><button id="addListItem" type="button" name="button" class="buttonList">Add List Item</button></label>
     </div>
+
+    <script type="text/javascript" src="index.js"></script>
 
   </body>
 </html>
