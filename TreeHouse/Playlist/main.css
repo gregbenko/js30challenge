@@ -1,0 +1,65 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: lightgrey;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 5px 10px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 5px;
+  border-style: none;
+  letter-spacing: 1px;
+  background-color: white;
+}
+
+.playContainer {
+  margin-top: 100px;
+  width: 80%;
+
+}
+
+.playTitle {
+  text-align: center;
+  height: 50px;
+  background-color: black;
+  border-radius: 10px 10px 0 0;
+  letter-spacing: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.track {
+  background-color: white;
+  height: 25px;
+  padding: 10px 20px;
+  border-bottom: solid 1px black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.artistTrackNames {
+  flex: 2 0 0;
+}
+
+.timer {}
+
+.controls {
+  height: 50px;
+  background-color: black;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.controlsContainer {
+  width: 80%;
+  text-align: center;
+}
